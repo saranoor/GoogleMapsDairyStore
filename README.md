@@ -3,6 +3,9 @@
 ## Problem
 Extract dairy business details (name, address, phone, rating) from Google Maps for a given ZIP code. Google throttles/block-lists repeated requests, so the scraper needs proxy rotation and resilient DOM handling.
 
+## Demo
+https://github.com/user-attachments/assets/a947ac8b-3d42-49d0-9071-9b0fa0a31adb
+
 ## How It’s Solved
 - Fetch free HTTPS proxies, filter for ones that can reach Google, and pick a working proxy.
 - Launch Selenium with Chrome, optionally via the chosen proxy.
