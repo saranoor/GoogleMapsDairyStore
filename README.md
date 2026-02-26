@@ -31,3 +31,12 @@ https://github.com/user-attachments/assets/a947ac8b-3d42-49d0-9071-9b0fa0a31adb
     .\.venv\Scripts\Activate.ps1
     deactivate
     pip install -r requirements.txt
+
+## For testing/comparision different scraper 
+- make sure chrome.exe in system variables
+- attach an exisiting selenium chrom tab to current selenium by running the following in cmd:
+    chrome.exe --remote-debugging-port=9222 --user-data-dir="C:\New_partition\Projects_learning\scraping-google-maps\Selenium"
+- Add this code:
+  options = Options()
+  options.add_experimental_option("debuggerAddress", "127.0.0.1:9222")
+  driver = webdriver.Chrome(options=options)
